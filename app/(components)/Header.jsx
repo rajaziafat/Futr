@@ -1,18 +1,14 @@
 "use client";
 import { Fragment, useState } from "react";
 import { Combobox } from "@headlessui/react";
-import { CheckIcon } from "@heroicons/react/20/solid";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
 import SelectCity from "./SelectCity";
 
 const people = [
-  { id: 1, name: "Wade Cooper" },
-  { id: 2, name: "Arlene Mccoy" },
-  { id: 3, name: "Devon Webb" },
-  { id: 4, name: "Tom Cook" },
-  { id: 5, name: "Tanya Fox" },
-  { id: 6, name: "Hellen Schmidt" },
+  { id: 1, name: "Abcd" },
+  { id: 2, name: "XYZ" },
+  { id: 3, name: "Webb" },
 ];
 
 const Header = () => {
@@ -43,7 +39,7 @@ const Header = () => {
           </div>
           <h1 className="font-semibold text-[24px]">Futr.</h1>
         </div>
-        <div className="w-40 sm:w-56 lg:w-96">
+        <div className="w-40 z-50 sm:w-56 lg:w-96">
           <Combobox value={selected} onChange={setSelected}>
             <div className="relative">
               <div className="relative w-full cursor-default overflow-hidden">

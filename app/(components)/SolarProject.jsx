@@ -3,15 +3,15 @@ import { useState } from "react";
 
 const SolarProject = () => {
   const [openProject, setOpenProject] = useState(false);
-   const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-   const handleProjectChange = (e) => {
-     setSelectedProject(e.target.value);
-   };
+  const handleProjectChange = (e) => {
+    setSelectedProject(e.target.value);
+  };
   return (
     <div className="overflow-x-auto pt-3 px-3">
       <div className="inline-block min-w-full rounded-lg overflow-hidden">
-        <table className="relative min-w-full leading-normal">
+        <table className="relative z-[1] min-w-full leading-normal">
           <thead>
             <tr className="border-b-2 border-[rgba(145,158,171,0.2)">
               <th className="px-5 pt-2 pb-4  text-left text-[14px] font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider"></th>
@@ -36,7 +36,7 @@ const SolarProject = () => {
               <th className="px-5 pt-2 sm:text-nowrap pb-4 order-gray-200  text-left text-[14px] font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
                 Inverter transformers
               </th>
-              <th className="px-5 pt-2 pb-4  text-left text-[14px] group font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
+              <th className="px-5 pt-2 pb-4 text-left text-[14px] group font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
                 <div className="relative">
                   <div onClick={() => setOpenProject(!openProject)}>
                     <button
@@ -49,7 +49,7 @@ const SolarProject = () => {
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-6 h-6"
+                        className="w-6 h-6"
                       >
                         <path
                           d="M6 8C6 7.44772 6.44772 7 7 7H17C17.5523 7 18 7.44772 18 8C18 8.55228 17.5523 9 17 9H7C6.44772 9 6 8.55228 6 8Z"
@@ -73,7 +73,7 @@ const SolarProject = () => {
                     </button>
                   </div>
                   {openProject && (
-                    <div className="z-50 w-[300px] absolute top-[130%] right-0 mt-1 bg-white rounded-md shadow-lg">
+                    <div className="w-[300px] absolute top-[130%] right-0 mt-1 bg-white rounded-md shadow-lg">
                       <label className="block px-4 py-2 font-normal text-[14px] text-[#637381] cursor-pointer">
                         <input
                           type="radio"
