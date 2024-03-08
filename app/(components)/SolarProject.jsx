@@ -18,7 +18,7 @@ const SolarProject = () => {
               <th className="px-5 pt-2 pb-4  text-left text-[14px] font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
                 Plant name
               </th>
-              <th className="px-5 sm:text-nowrap pt-2 pb-4 order-gray-200  text-left text-[14px] font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
+              <th className="px-5 text-nowrap pt-2 pb-4 order-gray-200  text-left text-[14px] font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
                 DC capacity
               </th>
               <th className="px-5 pt-2 pb-4  text-left text-[14px] font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
@@ -33,7 +33,7 @@ const SolarProject = () => {
               <th className="px-5 pt-2 pb-4  text-left text-[14px] font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
                 Modules
               </th>
-              <th className="px-5 pt-2 sm:text-nowrap pb-4 order-gray-200  text-left text-[14px] font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
+              <th className="px-5 pt-2 text-nowrap pb-4 order-gray-200  text-left text-[14px] font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
                 Inverter transformers
               </th>
               <th className="px-5 pt-2 pb-4 text-left text-[14px] group font-semibold sm:font-bold text-[rgba(145,158,171,1)] uppercase tracking-wider">
@@ -111,7 +111,7 @@ const SolarProject = () => {
                   </p>
                 </div>
               </td>
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] font-normal">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-[rgba(32,38,211,1)] whitespace-no-wrap">
                   Sulekal solar plant
                 </p>
@@ -122,42 +122,42 @@ const SolarProject = () => {
               <td className="px-5 pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-gray-900 whitespace-no-wrap">14</p>
               </td>
-              <td className="sm:text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
+              <td className="text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
                 <span>14-05-24</span>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <p>14</p>
               </td>
 
-              <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
+              <td className="px-5 pt-5 text-nowrap pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <div className="flex items-center gap-[12px]">
                   <p className="w-[16px] h-[16px] bg-[#8E33FF] rounded-[50%]"></p>
                   <span className="font-bold text-[#8E33FF]">On Project</span>
                 </div>
               </td>
 
-              <td className="sm:text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
+              <td className="text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
                 <p>ARB—2560</p>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <p>3</p>
               </td>
 
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
                 <p className="py-[4px] px-[12px] text-center rounded-full bg-[#CAFDF5]">
                   Solar project
                 </p>
               </td>
             </tr>
             <tr className="border-b px-5 border-[rgba(145,158,171,0.2)] align-middle">
-              <td className="bg-white text-sm">
+              <td className="bg-white">
                 <div className="w-[24px] h-[24px] flex items-center justify-center rounded-[50%] bg-[rgba(255,94,62,0.08)]">
                   <p className="text-[rgba(255,94,62,1)] font-bold text-[14px]">
                     1
                   </p>
                 </div>
               </td>
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] font-normal">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-[rgba(32,38,211,1)] whitespace-no-wrap">
                   Sulekal solar plant
                 </p>
@@ -168,7 +168,7 @@ const SolarProject = () => {
               <td className="px-5 pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-gray-900 whitespace-no-wrap">14</p>
               </td>
-              <td className="sm:text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
+              <td className="text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
                 <span>14-05-24</span>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
@@ -182,14 +182,14 @@ const SolarProject = () => {
                 </div>
               </td>
 
-              <td className="sm:text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
+              <td className="text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
                 <p>ARB—2560</p>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <p>3</p>
               </td>
 
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
                 <p className="py-[4px] px-[12px] text-center rounded-full bg-[#CAFDF5]">
                   Solar project
                 </p>
@@ -203,8 +203,8 @@ const SolarProject = () => {
                   </p>
                 </div> */}
               </td>
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] font-normal">
-                <p className="text-[rgba(32,38,211,1)] whitespace-no-wrap">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] font-normal">
+                <p className=" text-[rgba(32,38,211,1)] whitespace-no-wrap">
                   Sulekal solar plant
                 </p>
                 <p className="text-[rgba(145,158,171,1)] whitespace-no-wrap">
@@ -214,7 +214,7 @@ const SolarProject = () => {
               <td className="px-5 pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-gray-900 whitespace-no-wrap">14</p>
               </td>
-              <td className="sm:text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
+              <td className="text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
                 <span>14-05-24</span>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
@@ -228,14 +228,14 @@ const SolarProject = () => {
                 </div>
               </td>
 
-              <td className="sm:text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
+              <td className="text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
                 <p>ARB—2560</p>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <p>3</p>
               </td>
 
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
                 <p className="py-[4px] px-[12px] text-center rounded-full bg-[#CAFDF5]">
                   Solar project
                 </p>
@@ -249,7 +249,7 @@ const SolarProject = () => {
                   </p>
                 </div> */}
               </td>
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] font-normal">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-[rgba(32,38,211,1)] whitespace-no-wrap">
                   Sulekal solar plant
                 </p>
@@ -260,7 +260,7 @@ const SolarProject = () => {
               <td className="px-5 pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-gray-900 whitespace-no-wrap">14</p>
               </td>
-              <td className="sm:text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
+              <td className="text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
                 <span>14-05-24</span>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
@@ -274,14 +274,14 @@ const SolarProject = () => {
                 </div>
               </td>
 
-              <td className="sm:text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
+              <td className="text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
                 <p>ARB—2560</p>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <p>3</p>
               </td>
 
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
                 <p className="py-[4px] px-[12px] text-center rounded-full bg-[#CAFDF5]">
                   Solar project
                 </p>
@@ -295,7 +295,7 @@ const SolarProject = () => {
                   </p>
                 </div>
               </td>
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] font-normal">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-[rgba(32,38,211,1)] whitespace-no-wrap">
                   Sulekal solar plant
                 </p>
@@ -306,7 +306,7 @@ const SolarProject = () => {
               <td className="px-5 pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-gray-900 whitespace-no-wrap">14</p>
               </td>
-              <td className="sm:text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
+              <td className="text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
                 <span>14-05-24</span>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
@@ -320,14 +320,14 @@ const SolarProject = () => {
                 </div>
               </td>
 
-              <td className="sm:text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
+              <td className="text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
                 <p>ARB—2560</p>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <p>3</p>
               </td>
 
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
                 <p className="py-[4px] px-[12px] text-center rounded-full bg-[#CAFDF5]">
                   Solar project
                 </p>
@@ -341,7 +341,7 @@ const SolarProject = () => {
                   </p>
                 </div> */}
               </td>
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] font-normal">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-[rgba(32,38,211,1)] whitespace-no-wrap">
                   Sulekal solar plant
                 </p>
@@ -352,28 +352,28 @@ const SolarProject = () => {
               <td className="px-5 pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-gray-900 whitespace-no-wrap">14</p>
               </td>
-              <td className="sm:text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
+              <td className="text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
                 <span>14-05-24</span>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <p>14</p>
               </td>
 
-              <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <div className="flex items-center gap-[12px]">
                   <p className="w-[16px] h-[16px] bg-[#8E33FF] rounded-[50%]"></p>
                   <span className="font-bold text-[#8E33FF]">On Project</span>
                 </div>
               </td>
 
-              <td className="sm:text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
+              <td className="text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
                 <p>ARB—2560</p>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <p>3</p>
               </td>
 
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
                 <p className="py-[4px] px-[12px] text-center rounded-full bg-[#CAFDF5]">
                   Solar project
                 </p>
@@ -387,7 +387,7 @@ const SolarProject = () => {
                   </p>
                 </div> */}
               </td>
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] font-normal">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-[rgba(32,38,211,1)] whitespace-no-wrap">
                   Sulekal solar plant
                 </p>
@@ -398,7 +398,7 @@ const SolarProject = () => {
               <td className="px-5 pt-5 pb-2 text-[14px] font-normal">
                 <p className="text-gray-900 whitespace-no-wrap">14</p>
               </td>
-              <td className="sm:text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
+              <td className="text-nowrap px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal">
                 <span>14-05-24</span>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
@@ -412,14 +412,14 @@ const SolarProject = () => {
                 </div>
               </td>
 
-              <td className="sm:text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
+              <td className="text-nowrap px-5 pt-5 text-[rgba(33,43,54,1)] pb-2 text-[14px] font-normal text-left">
                 <p>ARB—2560</p>
               </td>
               <td className="px-5 pt-5 pb-2 text-[14px] text-[rgba(33,43,54,1)] font-normal text-left">
                 <p>3</p>
               </td>
 
-              <td className="px-5 sm:text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
+              <td className="px-5 text-nowrap pt-5 pb-2 text-[14px] text-[#00B8D9] font-bold">
                 <p className="py-[4px] px-[12px] text-center rounded-full bg-[#CAFDF5]">
                   Solar project
                 </p>

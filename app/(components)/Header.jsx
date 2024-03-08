@@ -25,7 +25,7 @@ const Header = () => {
             .includes(query.toLowerCase().replace(/\s+/g, ""))
         );
   return (
-    <header className="h-[70px] px-[24px] bg-[#ffffff] flex justify-between items-center">
+    <header className="h-[70px] px-4 sm:px-[24px] bg-[#ffffff] flex justify-between items-center">
       <div className="flex items-center gap-[24px]">
         <div className="flex items-center gap-[12px]">
           <div>
@@ -111,7 +111,7 @@ const Header = () => {
         <div>
           <SelectCity />
         </div>
-        <div className="hidden sm:flex h-[40px] w-[40px] rounded-[50%] bg-[#EDEFF2] justify-center items-center">
+        <div className="flex h-[40px] w-[40px] rounded-[50%] bg-[#EDEFF2] justify-center items-center">
           <Image
             src="/images/notifications.svg"
             className="w-[25px] h-[25px] cursor-pointer"
