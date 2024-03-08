@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+#specificDivId {
+  overflow-y: auto; 
+}
+#specificDivId::-webkit-scrollbar {
+  width: 8px;
+  height: 20px !important; 
+}
+
+
+#specificDivId::-webkit-scrollbar-thumb {
+  background-color: rgba(193, 193, 193, 1);
+  border-radius: 6px;
+}

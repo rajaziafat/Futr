@@ -43,12 +43,12 @@ const Header = () => {
           </div>
           <h1 className="font-semibold text-[24px]">Futr.</h1>
         </div>
-        <div className="w-80">
+        <div className="w-40 sm:w-56 lg:w-96">
           <Combobox value={selected} onChange={setSelected}>
             <div className="relative">
               <div className="relative w-full cursor-default overflow-hidden">
                 <Combobox.Input
-                  className="w-full border border-[#919EAB52] py-2 pl-9 pr-3 rounded-lg text-[16px] font-normal focus:outline-none leading-5 text-[#637381]"
+                  className="w-full border border-[#919EAB52] py-2 pl-9 pr-3 rounded-t-[8px] text-[16px] font-normal focus:outline-none leading-5 text-[#637381]"
                   displayValue={(person) => person.name}
                   onChange={(event) => setQuery(event.target.value)}
                   placeholder="Search"
@@ -71,7 +71,10 @@ const Header = () => {
                 leaveTo="opacity-0"
                 afterLeave={() => setQuery("")}
               >
-                <Combobox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-[14px]">
+                <Combobox.Options
+                  id="specificDivId"
+                  className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-[14px]"
+                >
                   {filteredPeople.length === 0 && query !== "" ? (
                     <div className="relative cursor-default select-none px-4 py-2 text-gray-700">
                       Nothing found.
@@ -96,18 +99,7 @@ const Header = () => {
                             >
                               {person.name}
                             </span>
-                            {selected ? (
-                              <span
-                                className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
-                                  active ? "text-black" : "text-teal-600"
-                                }`}
-                              >
-                                <CheckIcon
-                                  className="h-[17px] w-[17px]"
-                                  aria-hidden="true"
-                                />
-                              </span>
-                            ) : null}
+                            <div className="border-b border-[rgba(145,158,171,0.2)] pt-2 absolute left-0 z-20 w-full"></div>
                           </>
                         )}
                       </Combobox.Option>
@@ -123,7 +115,7 @@ const Header = () => {
         <div>
           <SelectCity />
         </div>
-        <div className="h-[40px] w-[40px] rounded-[50%] bg-[#EDEFF2] flex justify-center items-center">
+        <div className="hidden sm:flex h-[40px] w-[40px] rounded-[50%] bg-[#EDEFF2] justify-center items-center">
           <Image
             src="/images/notifications.svg"
             className="w-[25px] h-[25px] cursor-pointer"
