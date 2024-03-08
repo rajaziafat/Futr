@@ -60,6 +60,7 @@ const Header = () => {
                     height={1000}
                     className="h-[17px] w-[17px] text-gray-400"
                     aria-hidden="true"
+                    alt="search"
                   />
                 </Combobox.Button>
               </div>
@@ -122,7 +123,7 @@ const Header = () => {
         <div>
           <SelectCity />
         </div>
-        <div className="h-[40px] w-[40px] rounded-[50%] bg-[]">
+        <div className="h-[40px] w-[40px] rounded-[50%] bg-[#EDEFF2] flex justify-center items-center">
           <Image
             src="/images/notifications.svg"
             className="w-[25px] h-[25px] cursor-pointer"
