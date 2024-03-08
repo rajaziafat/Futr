@@ -1,0 +1,139 @@
+"use client";
+import { Fragment, useState } from "react";
+import { Combobox } from "@headlessui/react";
+import { CheckIcon } from "@heroicons/react/20/solid";
+import { Transition } from "@headlessui/react";
+import Image from "next/image";
+import SelectCity from "./SelectCity";
+
+const people = [
+  { id: 1, name: "Wade Cooper" },
+  { id: 2, name: "Arlene Mccoy" },
+  { id: 3, name: "Devon Webb" },
+  { id: 4, name: "Tom Cook" },
+  { id: 5, name: "Tanya Fox" },
+  { id: 6, name: "Hellen Schmidt" },
+];
+
+const Header = () => {
+  const [selected, setSelected] = useState(people);
+  const [query, setQuery] = useState("");
+
+  const filteredPeople =
+    query === ""
+      ? people
+      : people.filter((person) =>
+          person.name
+            .toLowerCase()
+            .replace(/\s+/g, "")
+            .includes(query.toLowerCase().replace(/\s+/g, ""))
+        );
+  return (
+    <header className="h-[70px] px-[24px] bg-[#ffffff] flex justify-between items-center">
+      <div className="flex items-center gap-[24px]">
+        <div className="flex items-center gap-[12px]">
+          <div>
+            <Image
+              src="/images/logo.svg"
+              className="w-[25px] h-[79px]"
+              alt="Logo"
+              width={10000}
+              height={1000}
+            />
+          </div>
+          <h1 className="font-semibold text-[24px]">Futr.</h1>
+        </div>
+        <div className="w-80">
+          <Combobox value={selected} onChange={setSelected}>
+            <div className="relative">
+              <div className="relative w-full cursor-default overflow-hidden">
+                <Combobox.Input
+                  className="w-full border border-[#919EAB52] py-2 pl-9 pr-3 rounded-lg text-[16px] font-normal focus:outline-none leading-5 text-[#637381]"
+                  displayValue={(person) => person.name}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="Search"
+                />
+                <Combobox.Button className="absolute inset-y-0 left-0 flex items-center pl-2">
+                  <Image
+                    src="/images/search.svg"
+                    width={1000}
+                    height={1000}
+                    className="h-[17px] w-[17px] text-gray-400"
+                    aria-hidden="true"
+                  />
+                </Combobox.Button>
+              </div>
+              <Transition
+                as={Fragment}
+                leave="transition ease-in duration-100"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+                afterLeave={() => setQuery("")}
+              >
+                <Combobox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-[14px]">
+                  {filteredPeople.length === 0 && query !== "" ? (
+                    <div className="relative cursor-default select-none px-4 py-2 text-gray-700">
+                      Nothing found.
+                    </div>
+                  ) : (
+                    filteredPeople.map((person) => (
+                      <Combobox.Option
+                        key={person.id}
+                        className={({ active }) =>
+                          `relative cursor-default select-none py-2 pl-10 pr-4 ${
+                            active ? "bg-[#F5F5F5] text-black" : "text-gray-900"
+                          }`
+                        }
+                        value={person}
+                      >
+                        {({ selected, active }) => (
+                          <>
+                            <span
+                              className={`block truncate ${
+                                selected ? "font-normal" : "font-normal"
+                              }`}
+                            >
+                              {person.name}
+                            </span>
+                            {selected ? (
+                              <span
+                                className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
+                                  active ? "text-black" : "text-teal-600"
+                                }`}
+                              >
+                                <CheckIcon
+                                  className="h-[17px] w-[17px]"
+                                  aria-hidden="true"
+                                />
+                              </span>
+                            ) : null}
+                          </>
+                        )}
+                      </Combobox.Option>
+                    ))
+                  )}
+                </Combobox.Options>
+              </Transition>
+            </div>
+          </Combobox>
+        </div>
+      </div>
+      <div className="flex items-center gap-[14px]">
+        <div>
+          <SelectCity />
+        </div>
+        <div className="h-[40px] w-[40px] rounded-[50%] bg-[]">
+          <Image
+            src="/images/notifications.svg"
+            className="w-[25px] h-[25px] cursor-pointer"
+            alt="Logo"
+            width={10000}
+            height={1000}
+          />
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
