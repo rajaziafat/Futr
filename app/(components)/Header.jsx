@@ -25,12 +25,12 @@ const Header = () => {
             .includes(query.toLowerCase().replace(/\s+/g, ""))
         );
   return (
-    <header className="h-[70px] px-4 sm:px-[24px] bg-[#ffffff] flex justify-between items-center">
+    <header className="h-[70px] px-4 sm:px-[24px] bg-white flex justify-between items-center">
       <div className="flex items-center gap-[24px]">
         <div className="flex items-center gap-[12px]">
           <div>
             <Image
-              src="/images/logo.svg"
+              src="/svgs/logo.svg"
               className="w-[25px] h-[79px]"
               alt="Logo"
               width={10000}
@@ -51,7 +51,7 @@ const Header = () => {
                 />
                 <Combobox.Button className="absolute inset-y-0 left-0 flex items-center pl-2">
                   <Image
-                    src="/images/search.svg"
+                    src="/svgs/search.svg"
                     width={1000}
                     height={1000}
                     className="h-[17px] w-[17px] text-gray-400"
@@ -111,9 +111,9 @@ const Header = () => {
         <div>
           <SelectCity />
         </div>
-        <div className="flex h-[40px] w-[40px] rounded-[50%] bg-[#EDEFF2] justify-center items-center">
+        <div className="flex h-[40px] w-[40px] rounded-[50%] bg-sky justify-center items-center">
           <Image
-            src="/images/notifications.svg"
+            src="/svgs/notifications.svg"
             className="w-[25px] h-[25px] cursor-pointer"
             alt="Logo"
             width={10000}

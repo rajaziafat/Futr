@@ -48,7 +48,7 @@ export default function SelectCity() {
                       <label className="flex items-center cursor-pointer">
                         <input
                           type="radio"
-                          className="w-4 h-4 text-blue-500 cursor-pointer focus:ring-blue-400"
+                          className="w-4 h-4 text-royalBlue cursor-pointer focus:ring-blue-400"
                           checked={selected}
                           onChange={() => setSelected(person)}
                         />
