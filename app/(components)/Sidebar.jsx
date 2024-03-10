@@ -152,8 +152,8 @@ function FilesIcon2(props) {
 
 const Sidebar = () => {
   return (
-    <>
-      <div className="absolute pl-4 sm:pl-[24px] top-0 bg-white w-[140px] h-[70px] flex items-center gap-[12px]">
+    <div className="px-4 sm:px-0 w-[112px] bg-white relative">
+      <div className="flex items-center px-2 w-[104px] absolute sm:static h-[70px] left-0 gap-[12px] transform translate-y-[-70px] bg-white">
         <div>
           <Image
             src="/svgs/logo.svg"
@@ -165,8 +165,8 @@ const Sidebar = () => {
         </div>
         <h1 className="font-semibold text-[19px] sm:text-[24px]">Futr.</h1>
       </div>
-      <div className="px-4 sm:px-0 mt-[12px] w-[112px] bg-white h-[calc(100vh-92px)] relative">
-        <div>
+      <div>
+        <div className="transform translate-y-[-20px] sm:translate-y-[-80px]">
           {/* Parent */}
           {menuItems.map((item, index) => (
             <div
@@ -190,7 +190,7 @@ const Sidebar = () => {
           alt="icon"
         />
       </div>
-    </>
+    </div>
   );
 };
 
