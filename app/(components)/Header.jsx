@@ -1,26 +1,12 @@
 import Image from "next/image";
-import SelectCity from "./SelectComp";
-import SearchCom from "./SearchComp";
+import SearchComp from "./SearchComp";
+import SelectCity from "./SelectCity";
 
 const Header = () => {
   return (
-    <header className="h-[70px] px-4 sm:px-[24px] bg-white flex justify-between items-center">
-      <div className="flex items-center gap-[24px]">
-        <div className="flex items-center gap-[12px]">
-          <div>
-            <Image
-              src="/svgs/logo.svg"
-              className="w-[25px] h-[79px]"
-              alt="Logo"
-              width={10000}
-              height={1000}
-            />
-          </div>
-          <h1 className="font-semibold text-[24px]">Futr.</h1>
-        </div>
-        <div className="w-40 z-50 sm:w-56 lg:w-96">
-          <SearchCom />
-        </div>
+    <header className="h-[70px] ml-auto w-[90%] px-4 sm:px-[24px] bg-white flex justify-between items-center">
+      <div className="w-40 mx-auto sm:ml-0 z-50 sm:w-56 lg:w-96">
+        <SearchComp />
       </div>
       <div className="flex items-center gap-[14px]">
         <div>

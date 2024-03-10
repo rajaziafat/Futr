@@ -3,7 +3,7 @@ import { Combobox } from "@headlessui/react";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
 
-const Search = ({ selected, setSelected, filteredPeople, setQuery }) => {
+const Search = ({ selected, setSelected, filteredPeople, setQuery, query }) => {
   return (
     <div>
       {" "}

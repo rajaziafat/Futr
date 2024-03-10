@@ -8,7 +8,7 @@ const people = [
   { id: 3, name: "Webb" },
 ];
 
-const SearchCom = () => {
+const SearchComp = () => {
   const [selected, setSelected] = useState(people);
   const [query, setQuery] = useState("");
 
@@ -28,9 +28,10 @@ const SearchCom = () => {
         setSelected={setSelected}
         filteredPeople={filteredPeople}
         setQuery={setQuery}
+        query={query}
       />
     </>
   );
 };
 
-export default SearchCom;
+export default SearchComp;

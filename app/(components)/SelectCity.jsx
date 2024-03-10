@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import SelectCityComponent from "./Select";
+import Select from "./Select";
 
 const people = [
   { id: 1, name: "Rajisthan" },
@@ -12,7 +12,7 @@ const SelectCity = () => {
   const [selected, setSelected] = useState(people[0]);
   return (
     <>
-      <SelectCityComponent
+      <Select
         selected={selected}
         setSelected={setSelected}
         people={people}

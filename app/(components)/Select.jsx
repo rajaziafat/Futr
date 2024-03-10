@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 
-export default function SelectCityComponent({ selected, setSelected, people }) {
+export default function Select({ selected, setSelected, people }) {
   return (
     <div className="hidden bg-white sm:block sm:w-48">
       <Listbox value={selected} onChange={setSelected}>
