@@ -1,15 +1,7 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 
-const people = [
-  { id: 1, name: "Rajisthan" },
-  { id: 2, name: "Maharashtra" },
-  { id: 3, name: "Karnataka" },
-];
-
-export default function SelectCity() {
-  const [selected, setSelected] = useState(people[0]);
-
+export default function SelectCityComponent({ selected, setSelected, people }) {
   return (
     <div className="hidden bg-white sm:block sm:w-48">
       <Listbox value={selected} onChange={setSelected}>
@@ -67,5 +59,3 @@ export default function SelectCity() {
     </div>
   );
 }
-
-

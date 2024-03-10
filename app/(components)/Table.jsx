@@ -1,4 +1,3 @@
-"use client"
 const Table = ({
   columns,
   selectedProject,
@@ -16,7 +15,7 @@ const Table = ({
               {columns.map((column, index) => (
                 <th
                   key={index}
-                  className="px-5 pt-2 pb-4 text-left text-[14px] font-semibold sm:font-bold text-slateGray uppercase tracking-wider"
+                  className="px-5 pt-2 pb-4 text-left text-[14px] font-semibold sm:font-bold text-slateGray tracking-wider"
                 >
                   {column.title}
                   {column.dropdown && (
@@ -120,7 +119,7 @@ const Table = ({
                   <p>{data.value2}</p>
                 </td>
                 <td className="px-5 pt-5 text-nowrap pb-2 text-[14px] text-slateNavy font-normal text-left">
-                  <div className="flex items-center gap-[12px]">
+                  <div className="flex items-start text-left gap-[12px]">
                     <p
                       className={`w-[16px] h-[16px] bg-${data.status.class} rounded-[50%]`}
                     ></p>
@@ -129,7 +128,7 @@ const Table = ({
                     </span>
                   </div>
                 </td>
-                <td className="text-nowrap px-5 pt-5 text-slateNavy pb-2 text-[14px] font-normal text-left">
+                <td className="px-5 pt-5 text-nowrap pb-2 text-[14px] text-slateNavy font-normal text-left">
                   <p>{data.code}</p>
                 </td>
                 <td className="px-5 pt-5 pb-2 text-[14px] text-slateNavy font-normal text-left">
